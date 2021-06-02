@@ -1,7 +1,8 @@
 {
   "name": "spotifyUI",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

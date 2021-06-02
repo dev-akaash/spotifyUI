@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonTabs } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
+  @ViewChild(IonTabs) tabs: IonTabs;
+  selected= '';
+  progress = 42;
+  flag = true;
+
   constructor() {}
+
+  setSelectedTab() {
+    console.log('CALLED');
+    this.selected = this.tabs.getSelected();
+  }
 
 }
